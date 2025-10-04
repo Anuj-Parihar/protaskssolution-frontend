@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AppointmentSection from "../components/AppointmentSection";
+import BusinessDevelopment from "../assets/logos/BusinessDevelopment.jpeg";
+import RecruitmentServices from "../assets/logos/RecruitmentServices.jpeg";
 import {
   FaWhatsapp,
   FaEnvelope,
@@ -15,12 +17,12 @@ const services = [
   {
     title: "Business Development",
     key: "BusinessDevelopment",
-    image: "https://protaskssolution.com/wp-content/uploads/2022/04/BD1.jpg",
+    image: BusinessDevelopment,
   },
   {
     title: "Recruitment Services",
     key: "RecruitmentServices",
-    image: "https://protaskssolution.com/wp-content/uploads/2022/04/Rec5.jpg",
+    image: RecruitmentServices,
   },
 ];
 
