@@ -109,7 +109,7 @@ const ContactUs = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/contact",
+        "https://protaskssolution-backend.onrender.com/api/contact",
         formData
       );
       if (res.status === 201) {
