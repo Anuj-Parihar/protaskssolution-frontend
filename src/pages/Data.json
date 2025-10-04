@@ -1,0 +1,43 @@
+{
+    "RecruitmentServices": {
+      "description": "ProTasks Solution provides comprehensive recruitment support to help businesses find the right talent efficiently.",
+      "features": [
+        "Candidate Sourcing: Identifying potential candidates from various sources like job portals, social media, and networking.",
+        "Resume Screening & Shortlisting: Reviewing resumes to filter the best candidates.",
+        "Interview Coordination: Scheduling and managing interviews for shortlisted candidates.",
+        "Hiring Process Management: Assisting in finalizing candidate selection and handling onboarding.",
+        "Industry-Specific Talent Acquisition: Providing recruitment solutions tailored to different industries."
+      ]
+    },
+    "BusinessDevelopment": {
+      "description": "ProTasks Solution focuses on helping businesses expand and generate revenue by exploring new market opportunities.",
+      "features": [
+        "Market Research & Analysis: Identifying trends, customer needs, and competitor strategies.",
+        "Lead Generation & Client Acquisition: Developing targeted outreach strategies.",
+        "Strategic Partnerships & Collaborations: Connecting businesses with potential partners and investors.",
+        "Sales & Revenue Growth Strategies: Implementing techniques to convert leads into long-term customers.",
+        "Brand Positioning & Market Expansion: Enhancing brand visibility and expanding customer segments."
+      ]
+    },
+    "EcommerceServices": {
+      "description": "ProTasks Solution helps businesses streamline their online store operations for better performance and customer experience.",
+      "features": [
+        "Product Listing & Catalog Management: Uploading and optimizing product details.",
+        "Order Processing & Fulfillment: Managing order confirmations and logistics.",
+        "Customer Support & Query Management: Handling inquiries, complaints, and refunds.",
+        "Inventory Management & Stock Updates: Keeping track of stock levels and automating restocking alerts.",
+        "Sales Optimization & Performance Analysis: Using data analytics to track sales performance."
+      ]
+    },
+    "VirtualAssistant": {
+      "description": "ProTasks Solution offers Virtual Assistant services to manage administrative and operational tasks efficiently.",
+      "features": [
+        "Email & Calendar Management: Organizing emails, responding to inquiries, and scheduling meetings.",
+        "Administrative Support & Data Entry: Handling paperwork and maintaining business records.",
+        "Customer Support & Communication: Answering phone calls and providing real-time assistance.",
+        "Social Media & Content Management: Posting updates and engaging with followers.",
+        "Project Assistance & Research: Conducting market research and assisting in presentations."
+      ]
+    }
+  }
+  
