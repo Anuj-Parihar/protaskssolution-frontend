@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AppointmentSection from "../components/AppointmentSection";
-import BusinessDevelopment from "../assets/logos/BusinessDevelopment.jpeg";
+import BusinessDevelopment from "../assets/logos/BusinessDevelopment.jpg";
 import RecruitmentServices from "../assets/logos/RecruitmentServices1.jpg";
 import {
   FaWhatsapp,

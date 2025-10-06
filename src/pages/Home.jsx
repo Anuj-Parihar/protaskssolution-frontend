@@ -1,6 +1,3 @@
-
-
-
 import React, { useEffect, useState } from "react";
 import ClientTestimonials from "../components/AppointmentSection";
 import {
@@ -14,7 +11,6 @@ import {
 } from "react-icons/fa";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import SoftwareLogo from "../assets/logos/software.jpg";
 import CybersecurityLogo from "../assets/logos/cybersecurity.jpg";
 import AiMlLogo from "../assets/logos/ai_ml.jpg";
 import ItServicesLogo from "../assets/logos/it_services.jpg";
@@ -24,10 +20,9 @@ import GrowthBanner from "../components/GrowthBanner";
 import financePhoto from "../assets/logos/Finance1.jpg"
 
 const industryLogos = [
-  { img: SoftwareLogo, title: "Software" },
   { img: CybersecurityLogo, title: "Cyber Security" },
   { img: AiMlLogo, title: "AI/ML" },
-  { img: ItServicesLogo, title: "IT Services" },
+  { img: ItServicesLogo, title: "IT & Software" },
   { img: DigitalMarketingLogo, title: "Digital Marketing" },
   { img: StaffingLogo, title: "Staffing Agencies" },
   { img: financePhoto, title: "Finance & Accounting" },
@@ -180,8 +175,13 @@ const Home = () => {
             100% { transform: translateX(-50%); }
           }
           .animate-scroll-logo {
-            animation: scroll-logo 30s linear infinite;
+            animation: scroll-logo 20s linear infinite;
           }
+             @media (max-width: 480px ) {
+              .animate-scroll-logo {
+                animation-duration: 5s; 
+              }
+            }
         `}</style>
 
         <div className="flex flex-wrap justify-center gap-10 mt-10 text-white text-center bg-[#3A5F91] py-6">
