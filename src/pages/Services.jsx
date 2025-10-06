@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AppointmentSection from "../components/AppointmentSection";
 import BusinessDevelopment from "../assets/logos/BusinessDevelopment.jpeg";
-import RecruitmentServices from "../assets/logos/RecruitmentServices.jpeg";
+import RecruitmentServices from "../assets/logos/RecruitmentServices1.jpg";
 import {
   FaWhatsapp,
   FaEnvelope,

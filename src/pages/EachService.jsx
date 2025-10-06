@@ -1,57 +1,3 @@
-// import React, { useEffect, useState } from 'react';
-// import { useParams } from 'react-router-dom';
-// import Header from '../components/Header';
-// import Footer from '../components/Footer';
-// import data from '../pages/Data.json';
-
-// const EachService = () => {
-//   const { serviceKey } = useParams();
-//   const [service, setService] = useState(null);
-
-//   useEffect(() => {
-//     if (data[serviceKey]) {
-//       setService(data[serviceKey]);
-//     }
-//   }, [serviceKey]);
-
-//   if (!service) {
-//     return <div className="text-center text-white text-2xl py-20">Service not found</div>;
-//   }
-
-//   const images = {
-//     RecruitmentServices: "https://protaskssolution.com/wp-content/uploads/2022/04/Rec5.jpg",
-//     BusinessDevelopment: "https://protaskssolution.com/wp-content/uploads/2022/04/BD1.jpg",
-//     EcommerceServices: "https://protaskssolution.com/wp-content/uploads/2024/11/Ecomm-23-1.jpg",
-//     VirtualAssistant: "https://protaskssolution.com/wp-content/uploads/2022/04/VA2.jpg",
-//   };
-
-//   return (
-//     <>
-//       <Header />
-//       <div className="py-18 relative">
-//         <img src={images[serviceKey]} alt={serviceKey} className="w-full h-64 object-cover" />
-//         <div className="absolute inset-0 bg-opacity-50 flex items-center justify-center">
-//           <h1 className="text-white text-4xl font-bold uppercase">{serviceKey.replace(/([A-Z])/g, ' $1').trim()}</h1>
-//         </div>
-//       </div>
-
-//       <section className="max-w-7xl mx-auto p-6 text-gray-800">
-//         <p className="text-lg mb-6">{service.description}</p>
-//         <h2 className="text-2xl font-semibold mb-4">Key Features:</h2>
-//         <ul className="list-disc list-inside space-y-2">
-//           {service.features.map((feature, index) => (
-//             <li key={index} className="text-lg">{feature}</li>
-//           ))}
-//         </ul>
-//       </section>
-//       <Footer />
-//     </>
-//   );
-// };
-
-// export default EachService;
-
-
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Header from '../components/Header';
@@ -75,8 +21,6 @@ const EachService = () => {
   const images = {
     RecruitmentServices: "https://protaskssolution.com/wp-content/uploads/2022/04/Rec5.jpg",
     BusinessDevelopment: "https://protaskssolution.com/wp-content/uploads/2022/04/BD1.jpg",
-    EcommerceServices: "https://protaskssolution.com/wp-content/uploads/2024/11/Ecomm-23-1.jpg",
-    VirtualAssistant: "https://protaskssolution.com/wp-content/uploads/2022/04/VA2.jpg",
   };
 
   return (

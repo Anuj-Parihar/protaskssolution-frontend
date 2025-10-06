@@ -19,16 +19,18 @@ import CybersecurityLogo from "../assets/logos/cybersecurity.jpg";
 import AiMlLogo from "../assets/logos/ai_ml.jpg";
 import ItServicesLogo from "../assets/logos/it_services.jpg";
 import DigitalMarketingLogo from "../assets/logos/digital_marketing.jpg";
-import StaffingLogo from "../assets/logos/staffing_agencies.jpg";
+import StaffingLogo from "../assets/logos/Staffing1.jpg";
 import GrowthBanner from "../components/GrowthBanner";
+import financePhoto from "../assets/logos/Finance1.jpg"
 
 const industryLogos = [
   { img: SoftwareLogo, title: "Software" },
-  { img: CybersecurityLogo, title: "Cybersecurity" },
+  { img: CybersecurityLogo, title: "Cyber Security" },
   { img: AiMlLogo, title: "AI/ML" },
   { img: ItServicesLogo, title: "IT Services" },
   { img: DigitalMarketingLogo, title: "Digital Marketing" },
   { img: StaffingLogo, title: "Staffing Agencies" },
+  { img: financePhoto, title: "Finance & Accounting" },
 ];
 
 const Home = () => {
