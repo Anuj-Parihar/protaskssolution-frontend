@@ -7,6 +7,7 @@ const Login = () => {
   const [formData, setFormData] = useState({ email: "", password: "", captcha: "" });
   const [captchaCode, setCaptchaCode] = useState(generateCaptcha());
   const [errorMessage, setErrorMessage] = useState("");
+  const [loading, setLoading] = useState(false); // ✅ New state for loading
 
   function generateCaptcha() {
     return Math.random().toString(36).substring(2, 8).toUpperCase();
@@ -18,11 +19,15 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     if (formData.captcha !== captchaCode) {
       setErrorMessage("Invalid CAPTCHA code");
       setCaptchaCode(generateCaptcha());
       return;
     }
+
+    setLoading(true); // ✅ Start loading
+    setErrorMessage("");
 
     try {
       const response = await axios.post(
@@ -36,6 +41,8 @@ const Login = () => {
       }
     } catch (error) {
       setErrorMessage("Invalid email or password");
+    } finally {
+      setLoading(false); // ✅ Stop loading
     }
   };
 
@@ -73,13 +80,18 @@ const Login = () => {
               required
               className="w-2/3 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0B3159]"
             />
-            <span className="w-1/3 text-center font-bold text-[#E5A24A] bg-gray-200 p-3 rounded-lg">{captchaCode}</span>
+            <span className="w-1/3 text-center font-bold text-[#E5A24A] bg-gray-200 p-3 rounded-lg">
+              {captchaCode}
+            </span>
           </div>
           <button
             type="submit"
-            className="w-full bg-[#0B3159] text-white py-3 rounded-lg font-semibold hover:bg-[#4A1F75] transition duration-300"
+            disabled={loading} // ✅ Disable while loading
+            className={`w-full text-white py-3 rounded-lg font-semibold transition duration-300 ${
+              loading ? "bg-gray-400 cursor-not-allowed" : "bg-[#0B3159] hover:bg-[#4A1F75]"
+            }`}
           >
-            Login
+            {loading ? "Loading..." : "Login"} {/* ✅ Show loading text */}
           </button>
         </form>
       </div>
