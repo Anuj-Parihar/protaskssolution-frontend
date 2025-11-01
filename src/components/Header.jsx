@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <nav className="bg-[#ffffff] shadow-md fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-between items-center py-3">
           {/* Logo */}
           <Link
             to="/"
@@ -20,7 +20,7 @@ const Header = () => {
             <img
               src={proTaskLogo}
               alt="Logo"
-              className="h-8 w-8 mr-2"
+              className="h-13 w-15"
             />
             ProTasks Solution
           </Link>
